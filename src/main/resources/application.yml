@@ -1,0 +1,17 @@
+endpoints:
+  health: 
+    Lenabled : true
+
+server:
+  port: 8087
+
+logging:
+  level:
+    io:
+      netty: DEBUG
+      reactor: DEBUG
+
+spring:
+  devtools:
+    restart: 
+      enabled: true
