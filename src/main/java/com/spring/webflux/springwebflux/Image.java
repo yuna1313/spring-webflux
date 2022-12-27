@@ -1,14 +1,18 @@
 package com.spring.webflux.springwebflux;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
+@Document
+//@NoArgsConstructor
 public class Image {
 	
-	private String id;
-	private String name;
+	@Id final private String id;
+	final private String name;
 	
 	public Image(String id, String name) {
 		this.id = id;
