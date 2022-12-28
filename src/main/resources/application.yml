@@ -7,9 +7,14 @@ server:
 
 logging:
   level:
-    io:
-      netty: DEBUG
-      reactor: DEBUG
+    com:
+      greglturnquist: DEBUG
+    org:
+      springframework:
+        data: TRACE
+    reactor:
+      core: TRACE
+      util: TRACE
 
 spring:
   devtools:
